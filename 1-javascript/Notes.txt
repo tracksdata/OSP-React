@@ -123,7 +123,7 @@ Async/Non-blocking Programming
 
 => promise api
 => reactive programming with javascript
-=> Unit-Testing  : JEST 
+=> Unit-Testing  : JEST / Story Box
 
 
 ------------------------------------------------------------------
@@ -148,6 +148,7 @@ datasources
 
     -> mySQL
     -> MongoDB
+    -> Redis DB
 
 devops tools
 ------------------------------------------------------------    
