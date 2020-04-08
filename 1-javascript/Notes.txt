@@ -121,7 +121,7 @@ file-names          ==> pascal-case,lower-case , data-types.js
 Async/Non-blocking Programming
 -----------------------------
 
-=> promise api
+=> promise api // observables 
 => reactive programming with javascript
 => Unit-Testing  : JEST / Story Box
 
