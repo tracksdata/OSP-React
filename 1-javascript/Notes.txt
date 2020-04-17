@@ -105,7 +105,6 @@ file-names          ==> pascal-case,lower-case , data-types.js
     => spread operators
     => de-structuring
     => symbols
-    => iterables & generator functions`
     => for-of loop
     ........
 => modules
