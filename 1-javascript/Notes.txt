@@ -151,3 +151,12 @@ datasources
 
 devops tools
 ------------------------------------------------------------    
+
+
+su / admin - command line / terminnal
+npm i live-server -g
+
+
+
+
+
