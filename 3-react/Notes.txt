@@ -1,4 +1,6 @@
 
+npm install yarn -g
+
 
 
 A. Intoduction
@@ -25,7 +27,7 @@ javascript programs can do any dynamic actions on web-page within browser-envi
 
 
 w3c standard web APIs
-    ==> DOM, XHR, Timer, ...
+    ==> DOM, XHR, Timer, Fetch ...
 
 
 imp-note:
@@ -164,9 +166,9 @@ modern solution:
       way-2 : using third party's js lib & F.Ws
       ------------------------------------------
 
-         a. react.js from facebook  : v17  ( our focus )
-         b. angular                 : v7
-         c. Vue
+         a. react.js(lib) from facebook  : v17  ( our focus )
+         b. angular  (fw)                : v9
+         c. Vue.js
          d. polymer.js
          ..
 
