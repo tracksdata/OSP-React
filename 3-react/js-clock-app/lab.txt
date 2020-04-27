@@ -1,0 +1,17 @@
+npm install create-react-app -g
+then 
+create-react-app test-1
+ or
+npx create-react-app test-1 (npm install create-react-app -g not required)
+
+//----------------------------------------------------------------------
+
+// YARN
+npm i yarn -g
+
+yarn create react-app test-1
+
+//----------------------------------
+
+
+
