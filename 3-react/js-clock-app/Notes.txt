@@ -1,0 +1,23 @@
+design issues with UI
+-------------------------
+    => code duplication
+    => can not re-use ui frangments page/application with customizations
+
+
+Solution
+---------
+    => mvc (model view controller) -> issue with 2 way bibding
+    => component based architecture (our focus)
+
+---------------------------------------
+component based architecture
+----------------------------------------
+    what is a component in UI?
+    ==> any UI frangment with single responsibility 
+        (i.e simpler and smaller)
+   
+    eg
+
+    <clock/> 
+
+    //------------------------------------

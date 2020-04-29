@@ -1,3 +1,8 @@
+
+.space{
+  margin: 10px;
+  float: left;
+}
 .App {
   text-align: center;
 }
