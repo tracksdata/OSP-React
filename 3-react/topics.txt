@@ -1,0 +1,20 @@
+contents
+--------
+
+    -  What is a Component?
+    -  props and state
+    -  life-cycle-methods
+    - inter component communication
+    - context
+    - container components
+    - higher order components
+
+========================================
+
+  - redux
+  - functional components and hooks
+  - securuty and testing 
+  - deployment
+
+========================================
+
