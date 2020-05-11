@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Action from './Action';
 import Summary from './Summary';
+import BUTTONS from '../Buttons';
+
 
 class ActionBox extends Component {
     state = {
@@ -8,7 +10,12 @@ class ActionBox extends Component {
     }
 
     renderActions() {
-        let buttons = [1, 2, 3, 4, -5, 6, 7, -8, 9, -10,50,-80,100];
+        let  buttons=BUTTONS;
+        console.log(buttons);
+        console.log(BUTTONS);
+        
+        
+       // let buttons = [1, 2, 3, 4, -5, 6, 7, -8, 9, -10,50,-80,100];
         return buttons.map((btn, index) => {
             return (
                 <Action btnLable={btn} key={index} onAction={e => this.calculateButtonTotal(e)} />

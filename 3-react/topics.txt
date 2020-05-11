@@ -10,10 +10,11 @@ contents
     - higher order components
 
 ========================================
-
+ - routers (spa)
+ - from handling - api calls (axios api) 
   - redux
   - functional components and hooks
-  - securuty and testing 
+  -  testing  - jest
   - deployment
 
 ========================================
