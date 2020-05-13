@@ -6,7 +6,17 @@ class Instructions extends Component {
     return (
       <div className="instructions">
         Follow the instructions on the README to get started!
+
+
+        <img
+          className="instructions__logo"
+          src="http://image-url"
+          alt="h4i logo"
+        />
+
+
       </div>
+
     )
   }
 }
