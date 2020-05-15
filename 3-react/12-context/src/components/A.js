@@ -3,8 +3,6 @@ import B from './B';
 import ColorContext from './ColorContext';
 
 class A extends Component {
-
-
     render() {
         let product = {
             id: '10',
@@ -17,10 +15,7 @@ class A extends Component {
 
                 <hr />
                 <h4>Color: {this.props.color}</h4>
-
-
-
-                <ColorContext.Provider value={JSON.stringify(product)} name={"Praveen"}>
+                <ColorContext.Provider value={product} name={"Praveen"}>
                     <B />
                 </ColorContext.Provider>
 
