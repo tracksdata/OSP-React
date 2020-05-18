@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Greet = (props) => {
+export const  Greet = (props) => {
 
     let [count, sum] = useState(0)
 
@@ -25,5 +25,10 @@ const Greet = (props) => {
     )
 };
 
-
-export default Greet;
+export const UseAll=()=>{
+    return (
+        <div>
+            <h1>Use All</h1>
+        </div>
+    )
+}

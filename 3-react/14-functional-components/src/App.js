@@ -1,7 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import Greet from './components/Greet'
-import UseAll from './components/Greet'
+import {Greet,UseAll} from './components/Greet'
 
 let App = () => {
 
@@ -11,6 +10,7 @@ let App = () => {
 
       <hr/>
       <Greet msg="How are you?"/>
+      <UseAll/>
 
     </div>
   )
