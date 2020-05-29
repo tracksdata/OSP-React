@@ -13,13 +13,13 @@ import axios from 'axios';
 
 const baseUrl = 'http://localhost:8080/api/'
 const api = axios.create({
-    baseUrl
+    baseURL:baseUrl
 });
 
 
 const productsApi = {
     getProducts: () => {
-        return api.get("http://localhost:8080/api/products");
+        return api.get("products");
     },
     getProduct: (id) => {
         return api.get(`/products/${id}`)

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import { getProducts } from './actions/products.js'
+import productsApi from './api/products'
 import axios from 'axios';
 
 
@@ -11,12 +12,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8080/api/products')
-      .then(response => {
-        this.setState({ products: response.data })
-      })
+    productsApi.getProducts()
+      .then(response => response.data)
+      .then(products => this.setState({ products}))
   }
-  
+
+
   renderProducts() {
 
     /*
