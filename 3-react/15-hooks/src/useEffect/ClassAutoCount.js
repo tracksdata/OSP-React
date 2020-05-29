@@ -12,15 +12,16 @@ class ClassAutoCount extends Component {
     }
 
     componentDidMount() {
-        //  {this.tick()}
+      
         this.interval = setInterval(this.tick, 1000)
+     
     }
     render() {
         return (
             <div className="card">
 
                 <h1>
-                    count: {this.state.count}
+                   class: count: {this.state.count}
 
                 </h1>
 
