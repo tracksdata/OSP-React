@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import { getProducts } from './actions/products.js'
 import productsApi from './api/products'
-import axios from 'axios';
-
 
 class App extends Component {
 

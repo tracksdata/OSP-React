@@ -11,9 +11,9 @@ import axios from 'axios';
 
 // define all api  call functiona
 
-const baseUrl = 'http://localhost:8080/api/'
+const baseURL = 'http://localhost:8080/api/'
 const api = axios.create({
-    baseURL:baseUrl
+    baseURL
 });
 
 const productsApi = {
@@ -24,7 +24,7 @@ const productsApi = {
         return api.get(`products/${id}`)
     },
     getProductsByName: (name) => {
-        return api.get(`byName/${name}`)
+        return api.get(`products/byName/${name}`)
     }
 
 
