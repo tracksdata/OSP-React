@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import productsApi from '../api/Products'
-import {Link} from 'react-router-dom'
-
-const ListProducts = () => {
+import { Link } from 'react-router-dom';
+const FindProductForm = () => {
     let [products, setProducts] = useState([])
+    let [name, setName] = useState('')
+
+
     useEffect(() => {
-        productsApi.getProducts()
+        if (products.length === 0) {
+            productsApi.getProducts()
+                .then(response => response.data)
+                .then(products => setProducts(products))
+
+        }
+        productsApi.getProductsByName(name)
             .then(response => response.data)
             .then(products => setProducts(products))
-    }, [])
+    }, [name])
 
-    function renderProducts() {
+    let renderProducts = () => {
         return products.map((product, index) => {
 
             return <tr>
@@ -23,10 +31,13 @@ const ListProducts = () => {
         })
     }
 
+
     return (
+        <div>
 
-        <div className="container">
+            <input class="form-control" placeholder="Type your product name here" type="text" value={name} onChange={e => setName(e.target.value)} />
 
+            <br />
             <div className="card">
                 <div className="card-header">Products</div>
                 <div className="card-body">
@@ -48,12 +59,8 @@ const ListProducts = () => {
 
             </div>
 
-
-
-
-
         </div>
     );
 };
 
-export default ListProducts;
+export default FindProductForm;
